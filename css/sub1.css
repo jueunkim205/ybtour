@@ -154,8 +154,8 @@ section .wrap {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   width: 25%;
   height: 250px;
   padding: 30px 32px;
@@ -246,4 +246,29 @@ section .wrap {
 
 .section3 ul li:last-child p {
   background: url(../images/ico_symbol.png) -338px -380px / 450px no-repeat;
+}
+
+/************* section4  *************/
+
+.section4 ul{
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 500px;
+}
+
+.section4 ul li{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #000;
+  transition: flex .5s;
+}
+.section4 ul li:hover{
+ flex: 2.5;
+  background: lightblue;
 }
