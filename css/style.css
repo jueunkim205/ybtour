@@ -244,8 +244,6 @@ header nav .mainMenu:hover~.bg {
 }
 
 
-
-
 /******** section3 시작 ********/
 
 .title {
@@ -549,7 +547,6 @@ footer .banner ul:last-child li:nth-child(5) p {
 footer .banner ul:last-child li:nth-child(6) p {
   background-position: -254px -13px;
 }
-
 
 footer .down {
   background: #f4f6f9;
