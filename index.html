@@ -12,7 +12,6 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
 
-
 </head>
 
 <body>
@@ -24,7 +23,6 @@
     section4 노랑풍선이 만드는 여행 
   section5 노랑풍선의 소식
   -->
-
 
   <header>
     <nav>
@@ -241,7 +239,6 @@
     </div>
   </section>
 
-
   <footer>
     <div class="up">
       <div class="banner">
@@ -297,6 +294,23 @@
       </div>
     </div>
   </footer>
+
+
+  <script>
+    let ht = document.documentElement.scrollTop;
+    let header = document.querySelector('header');
+
+    window.addEventListener('wheel', function (e) {
+      let delta = e.deltaY;
+      console.log(delta);
+      // 아래 + , 위 -
+      if (delta > 0) {
+        header.style.transform = 'translateY(-200px)'
+      } else{
+        header.style.transform = 'translateY(0)'
+      }
+    })
+  </script>
 </body>
 
 </html>
