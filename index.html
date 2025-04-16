@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>노랑풍선 회사소개 [여행을 가볍게]</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/all.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
-
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>노랑풍선 회사소개 [여행을 가볍게]</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+  </head>
 
 <body>
   <!--https://company.ybtour.co.kr/ -->
@@ -25,7 +29,6 @@
     section5 노랑풍선의 소식
 
     안한거
-    순서대로 글자띄우기
     aos사용하여 효과주기
   -->
 
@@ -130,10 +133,10 @@
       <ul>
         <!-- 1 -->
         <li>
-          <p>
+          <p data-aos="fade-right">
             <img src="./images/bg_story_1.jpg" alt="img1" />
           </p>
-          <div class="textbox">
+          <div class="textbox" data-aos="fade-up">
             <p>여행의 새로운 가치를 알립니다</p>
             <h1>가치를 전달하는 여행</h1>
             <h1>Value-Creating</h1>
@@ -301,7 +304,11 @@
   </footer>
 
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/script.js"></script>
+  <script>
+    AOS.init({});
+  </script>
 </body>
 
 </html>

@@ -38,6 +38,18 @@ header nav {
   height: 100px;
 }
 
+header.on {
+  background: #fff;
+}
+
+header.on nav .mainMenu>li>a {
+  color: #000;
+}
+
+header.on nav .logo img {
+  transform: translateY(-47px);
+}
+
 header:hover {
   background: #fff;
 }
