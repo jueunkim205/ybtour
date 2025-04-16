@@ -1,3 +1,7 @@
+// 새로고침시 최상단으로 이동
+// history.scrollRestoration = "manual";
+
+
 // header 메인메뉴
 let header = document.querySelector("header");
 
@@ -9,7 +13,7 @@ window.addEventListener("wheel", function (e) {
   // 아래 + , 위 -
 
   if (delta > 0 && ht != 0) { // 휠 아래로 내리면
-    header.style.transform = "translateY(-200px)"; 
+    header.style.transform = "translateY(-200px)";
     header.classList.remove("on");
   } else if (delta < 0 && ht > 500) {  // 휠 위로 올리면 보이기
     header.style.transform = "translateY(0)";
