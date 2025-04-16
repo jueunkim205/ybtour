@@ -16,6 +16,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #222;
 }
 
 /******** header ********/
@@ -162,6 +163,7 @@ header nav .mainMenu:hover~.bg {
 }
 
 /******** section1 시작 ********/
+
 .section1 {
   width: 100%;
   height: 100vh;
@@ -198,9 +200,11 @@ header nav .mainMenu:hover~.bg {
   text-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
 }
 
+.section1 .bg h1 span {
+  display: block;
+}
+
 /******** section2 시작 ********/
-
-
 
 .section2 .wrap {
   position: relative;
@@ -221,6 +225,10 @@ header nav .mainMenu:hover~.bg {
   font-size: 36px;
   font-weight: 400;
   line-height: 55px;
+}
+
+.section2 .wrap h2 span {
+  display: block;
 }
 
 .section2 .wrap .data {
@@ -266,7 +274,8 @@ header nav .mainMenu:hover~.bg {
 }
 
 .section3 .wrap,
-.section4 .wrap {
+.section4 .wrap,
+.section5 .wrap {
   max-width: 1480px;
   margin: 100px auto 0;
   padding: 0 20px;
@@ -363,6 +372,7 @@ header nav .mainMenu:hover~.bg {
   border-radius: 12px;
   overflow: hidden;
   width: calc(100% / 8);
+  cursor: pointer;
 }
 
 .section4 li:hover {
@@ -459,7 +469,62 @@ header nav .mainMenu:hover~.bg {
   transition: opacity 0.3s 0.4s;
 }
 
+/******** section4 끝 ********/
+
+
+/******** section5 시작 ********/
+
+
+/******** section5 끝 ********/
+.section5 .wrap {
+  display: flex;
+}
+
+.section5 .wrap .left {
+  width: 25%;
+}
+
+.section5 .wrap .left .title {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.section5 .wrap .left a {
+  display: flex;
+  gap: 15px;
+  letter-spacing: -1px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.section5 .wrap .left a span {
+  font-size: 15px;
+}
+
+.section5 .wrap .right {
+  flex: 1;
+}
+.section5 .wrap .right ul li:first-child{
+  border-top: 2px solid #000;
+
+}
+.section5 .wrap .right ul li{
+
+  border-bottom: 1px solid #ccc;
+}
+
+.section5 .wrap .right ul li a{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+
 /******** footer ********/
+footer {
+  margin-top: 100px;
+}
+
 footer .up,
 footer .down {
   width: 100%;

@@ -6,10 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>노랑풍선 회사소개 [여행을 가볍게]</title>
+  <!-- notosans -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+
+  <!-- notosans kr -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+
+  <!-- 구글아이콘 -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!-- aos -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/all.css" />
 </head>
@@ -26,6 +35,7 @@
 
     안한거
     aos사용하여 효과주기
+    headerfooter 분리하기
   -->
 
   <header>
@@ -90,8 +100,7 @@
       </video>
 
       <h1>
-        <!-- 왜 fadeup이 안되지 -->
-        <span data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">여행을 가볍게!</span><br>
+        <span data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">여행을 가볍게!</span>
         <span data-aos="fade-up" data-aos-delay="500" data-aos-offset="0">일상을 빛나게!</span>
       </h1>
     </div>
@@ -100,9 +109,10 @@
   <section class="section2">
     <div class="wrap">
       <h2>
-        노랑풍선은<br>
-        24년간 축적된 데이터와 네트워크로<br>
-        여행 문화를 만들어갑니다<br>
+        <span data-aos="fade-up" data-aos-delay="100" data-aos-offset="0" data-aos-duration="500">노랑풍선은</span>
+        <span data-aos="fade-up" data-aos-delay="500" data-aos-offset="0" data-aos-duration="500">24년간 축적된 데이터와
+          네트워크로</span>
+        <span data-aos="fade-up" data-aos-delay="1000" data-aos-offset="0" data-aos-duration="500"> 여행 문화를 만들어갑니다</span>
       </h2>
 
       <ul class="data">
@@ -127,7 +137,7 @@
 
   <section class="section3">
     <div class="wrap">
-      <h1 class="title" data-aos="fade-down" data-aos-offset="100">노랑풍선이 바라는 여행</h1>
+      <h1 class="title" data-aos="fade-down" data-aos-offset="0">노랑풍선이 바라는 여행</h1>
       <ul>
         <!-- 1 -->
         <li>
@@ -179,8 +189,8 @@
 
   <section class="section4">
     <div class="wrap">
-      <h1 class="title" data-aos="fade-down" data-aos-offset="100">노랑풍선이 만드는 여행</h1>
-      <ul data-aos="fade-up" data-aos-offset="100">
+      <h1 class="title" data-aos="fade-down" data-aos-offset="0">노랑풍선이 만드는 여행</h1>
+      <ul data-aos="fade-up" data-aos-offset="400">
         <li>
           <div class="txt">
             <h1>Package</h1>
@@ -238,12 +248,36 @@
 
   <section class="section5">
     <div class="wrap">
-      <ul>
-        <li class="left"></li>
-        <li class="con"></li>
-      </ul>
+
+      <div class="left">
+        <h1 class="title">노랑풍선의 소식</h1>
+        <a href="#">소식 알아보기<span class="material-symbols-outlined">
+            arrow_forward_ios
+          </span></a>
+      </div>
+
+      <div class="right">
+
+
+
+
+
+
+
+        <ul>
+          <li><a href="">[아주경제] 구예원 노랑풍선 본부장, 강원관광재단 임직원에 여행 트렌드·CS 전략 공유<span>2025.04.07</span></a></li>
+          <li><a href="">[뉴시스] 노랑풍선, '같이가요! 서울여행' 사회공헌 활동 성료<span>2025.04.04</span></a></li>
+          <li><a href="">[머니투데이] 노랑풍선, 정보보호관리체계(ISMS) 인증 획득<span>2025.03.24</span></a></li>
+          <li><a href="">[뉴스핌] 노랑풍선, 오사카 사무소 개소..."일본 시장 공략 본격화"<span>2025.03.12</span></a></li>
+          <li><a href="">[머니투데이] 노랑풍선, AI 기반 여권 정보 등록 자동화 서비스 도입<span>2025.02.25</span></a></li>
+        </ul>
+      </div>
+
     </div>
   </section>
+
+
+
 
   <footer>
     <div class="up">
@@ -304,6 +338,7 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/script.js"></script>
+
 </body>
 
 </html>
