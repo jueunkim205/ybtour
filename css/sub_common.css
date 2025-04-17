@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: YbFontMedium;
+  src: url(../images/YbFontMedium.woff) format("woff");
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: YbFontMedium;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+.subTitle {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  margin-top: 100px;
+  text-align: center;
+  background: url(../images/sub_title_info.jpg) center/cover no-repeat;
+}
+
+.subTitle .txt {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.subTitle .txt h1 {
+  font-family: YbFontMedium;
+  margin-top: 25px;
+  font-size: 48px;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+}
+
+section {
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+
+section .wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Pretendard, sans-serif;
+}
