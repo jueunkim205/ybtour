@@ -1,25 +1,29 @@
 @charset "utf-8";
 
-.btns {
+#sub2Btns {
   margin: 60px auto;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.btns a {
+#sub2Btns a {
   padding: 12px 24px;
   line-height: 1.3;
   letter-spacing: -1px;
   border-radius: 30px;
   font-size: 24px;
   font-weight: 500;
-  background: #131d73;
-  color: #fff;
+  color: #777;
+  background: #f7f7f7;
   font-family: Pretendard, sans-serif;
 }
 
-.btns a.on {
-  color: #777;
-  background: #f7f7f7;
+#sub2Btns a.on {
+  background: #131d73;
+  color: #fff;
+}
+
+.con1{
+ background: plum;
 }
