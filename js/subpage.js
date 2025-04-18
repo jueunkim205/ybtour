@@ -53,3 +53,12 @@ btns.forEach((v, k) => {
   };
 });
 */
+
+AOS.init({
+  duration: 1000,
+  // delay: 500,
+  easing: "ease-in-out-sine",
+  offset: 100,
+});
+
+

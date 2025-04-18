@@ -10,6 +10,9 @@
   <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
   <link rel="stylesheet" href="./css/headerfooter.css" />
   <link rel="stylesheet" href="./css/sub_common.css" />
   <link rel="stylesheet" href="./css/sub1.css">
@@ -40,8 +43,8 @@
         <h2>미션</h2>
         <ul>
           <li>
-            <p><img src="./images/bg_mission_1.jpg" alt="미션 이미지"></p>
-            <div class="textbox">
+            <p data-aos="flip-left"><img src="./images/bg_mission_1.jpg" alt="미션 이미지"></p>
+            <div class="textbox" data-aos="flip-left" data-aos-offset="100">
               <span>시장선도</span>
               <h4>여행분야의 글로벌 리더</h4>
               <p>국내·외 다양한 여행문화로 고객의 필요에 맞는 시장을
@@ -49,8 +52,8 @@
             </div>
           </li>
           <li>
-            <p><img src="./images/bg_mission_2.jpg" alt="미션 이미지"></p>
-            <div class="textbox">
+            <p data-aos="flip-left" data-aos-delay="100"><img src="./images/bg_mission_2.jpg" alt="미션 이미지"></p>
+            <div class="textbox" data-aos="flip-left" data-aos-offset="100">
               <span>고객선도</span>
               <h4>고객을 위한 최고의 가치실현</h4>
               <p>고객의, 고객에 의한, 고객을 위한 시스템 정착을 통해
@@ -58,8 +61,8 @@
             </div>
           </li>
           <li>
-            <p><img src="./images/bg_mission_3.jpg" alt="미션 이미지"></p>
-            <div class="textbox">
+            <p data-aos="flip-left" data-aos-delay="200"><img src="./images/bg_mission_3.jpg" alt="미션 이미지"></p>
+            <div class="textbox" data-aos="flip-left" data-aos-offset="100">
               <span>경영선도</span>
               <h4>정도 경영을 통한 국민 기업</h4>
               <p>대외로 정도 경영을, 대내로 투명 경영을 통한
@@ -75,13 +78,13 @@
     <section class="section2">
       <!-- 배경깔기 -->
       <div class="wrap">
-        <div class="up">
+        <div class="up" data-aos="fade-up">
           <h2>Brand Story</h2>
           <p>여행문화의 희망은<br>
             노랑풍선입니다.</p>
         </div>
 
-        <div class="down">
+        <div class="down" data-aos="fade-up" data-aos-delay="150">
           <h4>모든 서비스는<br>
             사람을 위해, 행복을 위해, 고객 한 분 한 분의 따뜻한 미소를 위해</h4>
           <p>
@@ -97,7 +100,7 @@
 
     </section>
 
-    <section class="section3">
+    <section class="section3" data-aos="fade-up">
       <div class="wrap">
         <h2>회사개요</h2>
         <ul>
@@ -161,7 +164,7 @@
       </div>
     </section>
 
-    <section class="section4">
+    <section class="section4" data-aos="fade-up">
       <div class="wrap">
         <h2>경영이념</h2>
         <ul>
@@ -184,7 +187,7 @@
       </div>
     </section>
 
-    <section class="section5">
+    <section class="section5" data-aos="fade-up">
       <div class="wrap">
         <h2>사업영역</h2>
 
@@ -250,8 +253,8 @@
 
     <section class="section6">
       <div class="wrap">
-        <h2>제휴</h2>
-        <div class="con">
+        <h2 data-aos="fade-up">제휴</h2>
+        <div class="con" data-aos="fade-up">
           <h3>온라인 제휴</h3>
           <ul>
             <li>
@@ -272,7 +275,7 @@
           </ul>
         </div>
 
-        <div class="con">
+        <div class="con" data-aos="fade-up">
           <h3>미디어 제휴</h3>
           <ul>
             <li>
@@ -290,7 +293,7 @@
           </ul>
         </div>
 
-        <div class="con">
+        <div class="con" data-aos="fade-up">
           <h3>언론 제휴</h3>
           <ul>
             <li>
@@ -308,6 +311,8 @@
       </div>
     </section>
   </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/subpage.js"></script>
 </body>
 
