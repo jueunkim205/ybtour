@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+:root {
+  /* rem의 기준 */
+  font-size: 10px;
+}
+
 @font-face {
   font-family: YbFontMedium;
   src: url(../images/YbFontMedium.woff) format("woff");
@@ -18,7 +23,6 @@ a {
   text-decoration: none;
   color: #222;
 }
-
 
 /******** section1 시작 ********/
 
@@ -49,11 +53,11 @@ a {
   font-family: YbFontMedium, sans-serif;
   position: absolute;
   top: 50%;
-  left: 22%;
-  transform: translate(-50%, -50%);
-  font-size: 74px;
+  transform: translateY(-50%);
+  margin-left: 7vw;
+  font-size: 7.4rem;
   font-weight: 400;
-  line-height: 100px;
+  line-height: 10rem;
   color: #fff;
   text-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
 }
@@ -78,11 +82,11 @@ a {
   font-family: YbFontMedium, sans-serif;
   position: absolute;
   top: 46%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  font-size: 36px;
+  transform: translateY(-50%);
+  margin-left: 7vw;
+  font-size: 3.6rem;
   font-weight: 400;
-  line-height: 55px;
+  line-height: 5.5rem;
 }
 
 .section2 .wrap h2 span {
@@ -91,32 +95,36 @@ a {
 
 .section2 .wrap .data {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  width: 70%;
-  gap: 10%;
+  justify-content: center;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
   font-family: "Noto Sans KR", serif;
 }
 
 .section2 .wrap .data li {
-  flex: 1;
+  width: 25%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .section2 .wrap .data li h4 {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .section2 .wrap .data li h3 {
-  font-size: 84px;
+  font-size: 4vw;
   font-weight: 300;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
 }
 
 .section2 .wrap .data li h5 {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
   color: rgba(255, 255, 255, .7)
 }
@@ -126,7 +134,7 @@ a {
 
 .title {
   text-align: center;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-family: YbFontMedium, sans-serif;
   font-weight: 400;
 }
@@ -135,16 +143,15 @@ a {
 .section4 .wrap,
 .section5 .wrap {
   max-width: 1480px;
-  margin: 100px auto 0;
-  /* padding: 0 20px; */
-  /* box-sizing: border-box; */
+  margin: 10rem auto 0;
+  overflow: hidden;
 }
 
 .section3 ul,
 .section4 ul {
   width: 100%;
   max-width: 1480px;
-  margin: 100px auto;
+  margin: 10rem auto;
   box-sizing: border-box;
 }
 
@@ -153,7 +160,7 @@ a {
   align-items: center;
   gap: 7%;
   height: 440px;
-  margin-bottom: 44px;
+  margin-bottom: 4.4rem;
 }
 
 .section3 li:last-child {
@@ -172,7 +179,7 @@ a {
   max-width: 720px;
   width: 48%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 1rem;
   overflow: hidden;
 }
 
@@ -192,7 +199,7 @@ a {
 
 .section3 li .textbox p {
   margin-bottom: 8px;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
   color: #777;
   letter-spacing: -1px;
@@ -200,14 +207,14 @@ a {
 }
 
 .section3 li .textbox h1:first-of-type {
-  font-size: 48px;
+  font-size: 4.8rem;
   color: #222;
   font-weight: 400;
   letter-spacing: -1px;
 }
 
 .section3 li .textbox h1:last-of-type {
-  font-size: 48px;
+  font-size: 4.8rem;
   color: #ffc72c;
   font-weight: 800;
 }
@@ -220,14 +227,14 @@ a {
 .section4 ul {
   height: 500px;
   display: flex;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 .section4 li {
   position: relative;
   height: 100%;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 1.2rem;
   overflow: hidden;
   width: calc(100% / 8);
   cursor: pointer;
@@ -302,22 +309,22 @@ a {
   position: absolute;
   font-family: Noto Sans, serif;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 2.4rem;
   width: 100%;
   word-break: keep-all;
 }
 
 .section4 .txt p {
-  height: 100px;
-  padding: 0 25px;
+  height: 10rem;
+  padding: 0 2.5rem;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 3rem;
   opacity: 0;
   word-break: keep-all;
 }
 
 .section4 li:hover .txt h1 {
-  font-size: 30px;
+  font-size: 3rem;
   position: relative;
 }
 
@@ -332,8 +339,6 @@ a {
 
 /******** section5 시작 ********/
 
-
-/******** section5 끝 ********/
 .section5 .wrap {
   display: flex;
 }
@@ -344,19 +349,19 @@ a {
 
 .section5 .wrap .left .title {
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .section5 .wrap .left a {
   display: flex;
-  gap: 15px;
+  gap: 1.5rem;
   letter-spacing: -1px;
   font-weight: 500;
   align-items: center;
 }
 
 .section5 .wrap .left a span {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .section5 .wrap .right {
@@ -374,38 +379,75 @@ a {
 .section5 .wrap .right ul li a {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
-  font-size: 18px;
+  padding: 3rem 0;
+  font-size: 1.8rem;
   font-weight: 500;
   font-family: "Noto Sans KR", serif;
 }
 
 .section5 .wrap .right ul li span {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
+/******** section5 끝 ********/
 
 
 
 /******** 반응형 ********/
-
 @media screen and (max-width:1024px) {
-  .section1 .bg h1 {
-    top: 40%;
-    left: 12%;
-    font-size: 32px;
-    line-height: 45px;
+  :root {
+    /* rem의 기준 */
+    font-size: 8px;
   }
 
-  .section3 section,
-  .section4 section {
-    margin: 50px auto;
+  .award {
+    display: none;
+  }
+
+  .wrap {
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  header nav .mainMenu {
+    display: none;
   }
 
   .title {
     text-align: left;
-    font-size: 24px;
+    font-size: 3rem;
+  }
+
+  .section1 .bg h1 {
+    top: 40%;
+    margin-left: 30px;
+    line-height: 5.5rem;
+    font-size: 4rem;
+  }
+
+  .section2 .wrap h2 {
+    margin-left: 0;
+  }
+
+  .section2 .wrap .data {
+    bottom: 5%;
+    flex-direction: column;
+    text-align-last: left;
+  }
+
+  .section2 .wrap .data li {
+    margin-bottom: 20px;
+  }
+
+  .section2 .wrap .data li h4 {
+    font-size: 2rem;
+  }
+
+  .section2 .wrap .data li h3 {
+    letter-spacing: 0;
+    font-size: 3rem;
+    margin: 10px 0;
   }
 
   .section3 ul,
@@ -415,8 +457,6 @@ a {
 
   .section3 li {
     height: auto;
-    gap: 0;
-    justify-content: space-between;
   }
 
   .section3 li>p {
@@ -428,9 +468,7 @@ a {
   }
 
   .section3 li .textbox p {
-    font-size: 16px;
-    font-weight: 00;
-    letter-spacing: -1.5px;
+    font-size: 2rem;
   }
 
   .section3 li:nth-child(odd) .textbox {
@@ -443,7 +481,7 @@ a {
 
   .section3 li .textbox h1:first-of-type,
   .section3 li .textbox h1:last-of-type {
-    font-size: 22px;
+    font-size: 3rem;
   }
 
   .section4 ul {
@@ -463,7 +501,7 @@ a {
 
   .section4 li .txt h1,
   .section4 li:hover .txt h1 {
-    font-size: 18px;
+    font-size: 2rem;
   }
 
   .section4 li:hover p {
@@ -473,11 +511,29 @@ a {
 
 @media screen and (max-width:748px) {
 
+  .wrap {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .section2 .wrap h2 {
+    top: 30%;
+    margin-left: 0;
+  }
+
+  .section2 .wrap .data {
+    bottom: 15%;
+  }
+
+  .section2 .wrap .data li {
+    width: 100%;
+  }
+
   .section3 li,
   .section3 li:nth-child(even) {
     flex-direction: column;
     height: auto;
-    gap: 10px;
+    gap: 1rem;
   }
 
   .section3 li>p {
