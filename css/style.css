@@ -410,10 +410,7 @@ a {
     box-sizing: border-box;
   }
 
-  header nav .mainMenu {
-    display: none;
-  }
-
+  
   .title {
     text-align: left;
     font-size: 3rem;
@@ -505,6 +502,17 @@ a {
   }
 
   .section4 li:hover p {
+    display: none;
+  }
+
+  .section5 .wrap {
+    flex-direction: column;
+  }
+  .section5 .wrap .left {
+    width: 25%;
+  }
+
+  .section5 .wrap .left a {
     display: none;
   }
 }

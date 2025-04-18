@@ -180,6 +180,7 @@ footer .up .banner ul {
 
 footer .up .banner ul:first-child {
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 footer .up .banner ul:first-child a {
@@ -353,4 +354,17 @@ footer .copy {
   margin-top: 25px;
   color: #555;
   font-weight: 600;
+}
+
+
+@media screen and (max-width:1024px) {
+
+  header nav .mainMenu {
+    display: none;
+  }
+
+
+  footer .up .banner{
+    flex-direction: column;
+  }
 }
