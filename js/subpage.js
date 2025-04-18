@@ -1,3 +1,5 @@
+// jQuery
+
 $(".section4 ul li")
   .on("mouseover", function () {
     $(this).addClass("on");
@@ -6,28 +8,28 @@ $(".section4 ul li")
     $(this).removeClass("on");
   });
 
-/*
-$("#sub2Btns a").eq(0).addClass("on");
-$("section").eq(0).addClass("on");
 
-$("#sub2Btns a").on("click", function () {
-  if ($(this).hasClass("on")) {
-    // $(this).removeClass("on");
-    return false;
-  } else {
-    $("#sub2Btns a").removeClass("on");
+
+
+let btns = $("#sub2Btns a");
+let sections = $("section");
+
+btns.eq(0).addClass("on");
+sections.eq(0).addClass("on");
+
+btns.each(function (index) {
+  $(this).on("click", function () {
+    btns.removeClass("on");
+    sections.removeClass("on");
+
     $(this).addClass("on");
-  }
-
-  if($('section').hasClass('on')){
-   return false;
-  } else{
-    $('section').remove('on')
-    $('section').addClass('on')
-  }
+    sections.eq(index).addClass("on");
+  });
 });
-*/
 
+
+
+/* javascript
 let btns = document.querySelectorAll("#sub2Btns a");
 let sections = document.querySelectorAll("section");
 
@@ -50,3 +52,4 @@ btns.forEach((v, k) => {
     sections[k].classList.add("on");
   };
 });
+*/
