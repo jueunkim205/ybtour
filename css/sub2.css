@@ -1,5 +1,24 @@
 @charset "utf-8";
 
+section {
+  display: none;
+}
+
+section.on{
+  display: block;
+}
+
+section h2{
+  display: flex;justify-content: space-between;
+  align-items: center;
+}
+
+section h2 span{
+  font-family: Pretendard, sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+
 #sub2Btns {
   margin: 60px auto;
   display: flex;
@@ -24,6 +43,40 @@
   color: #fff;
 }
 
-.con1{
- background: plum;
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+  border-top: 2px solid #000;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+table th{
+  border-left: none;
+  word-break: keep-all;
+}
+
+table td{
+  text-align: right;
+  color: #555;
+  width:24%;
+}
+
+table thead th{
+  font-weight: bold;
+  background: #eee;
+}
+
+
+table th:last-of-type,
+table td:last-of-type{
+  border-right: none;
 }
