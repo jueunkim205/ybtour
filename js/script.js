@@ -81,13 +81,21 @@ function resetCounters() {
 let wasAtTop = false;
 
 window.addEventListener("scroll", () => {
-  const isAtTop = window.scrollY === 0;
+  const isNearTop = window.scrollY <= 100;
 
-  if (isAtTop && !wasAtTop) {
-    resetCounters(); // 최상단일 때 실행
+  if (isNearTop && !wasAtTop) {
+    resetCounters(); // 스크롤 위치가 100px 이하일 때 실행
   }
 
-  wasAtTop = isAtTop;
+  wasAtTop = isNearTop;
+});
+
+// 페이지 로드 직후 scrollY가 100 이하일 경우 자동 실행
+window.addEventListener("load", () => {
+  if (window.scrollY <= 100) {
+    resetCounters();
+    wasAtTop = true;
+  }
 });
 
 

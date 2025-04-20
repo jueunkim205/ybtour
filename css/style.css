@@ -81,7 +81,7 @@ a {
 .section2 .wrap h2 {
   font-family: YbFontMedium, sans-serif;
   position: absolute;
-  top: 46%;
+  top: 45%;
   transform: translateY(-50%);
   margin-left: 7vw;
   font-size: 3.6rem;
@@ -143,16 +143,22 @@ a {
 .section4 .wrap,
 .section5 .wrap {
   max-width: 1480px;
+  width: 100%;
+  padding: 0 2rem;
   margin: 10rem auto 0;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .section3 ul,
 .section4 ul {
   width: 100%;
   max-width: 1480px;
-  margin: 10rem auto;
-  box-sizing: border-box;
+  margin: 10rem auto 0;
+}
+
+.section3 ul {
+  overflow: hidden;
 }
 
 .section3 li {
@@ -317,8 +323,9 @@ a {
 .section4 .txt p {
   height: 10rem;
   padding: 0 2.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: 3rem;
+  line-height: 2.8rem;
   opacity: 0;
   word-break: keep-all;
 }
@@ -410,7 +417,6 @@ a {
     box-sizing: border-box;
   }
 
-  
   .title {
     text-align: left;
     font-size: 3rem;
@@ -428,7 +434,7 @@ a {
   }
 
   .section2 .wrap .data {
-    bottom: 5%;
+    bottom: 0;
     flex-direction: column;
     text-align-last: left;
   }
@@ -508,6 +514,7 @@ a {
   .section5 .wrap {
     flex-direction: column;
   }
+
   .section5 .wrap .left {
     width: 25%;
   }
