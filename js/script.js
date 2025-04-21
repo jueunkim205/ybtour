@@ -76,7 +76,8 @@ window.addEventListener("load", () => {
   }
 });
 
-let fArrow = $("footer .down .con .top span");
+
+let fArrow = $("footer .mOnly");
 let detail = $("footer .down .con .detail");
 
 fArrow.click(function () {
