@@ -30,30 +30,6 @@ window.addEventListener("wheel", function (e) {
 
 // 숫자 카운터
 
-/*
-const counters = document.querySelectorAll(".counter");
-
-counters.forEach(function (counter) {
-  counter.textContent = "0";
-  const targetNum = +counter.getAttribute("data-target");
-
-  const updateCounter = () => {
-    const count = +counter.textContent.replace(/,/g, ""); // 콤마제거 후 숫자로 변환
-    const increment = targetNum / 100;
-    const nextCount = Math.ceil(count + increment);
-    const finalCount = nextCount > targetNum ? targetNum : nextCount;
-
-    counter.textContent = finalCount.toLocaleString(); // 쉼표처리
-
-    if (count < targetNum) {
-      requestAnimationFrame(updateCounter);
-    }
-  };
-
-  updateCounter();
-});
-*/
-
 const counters = document.querySelectorAll(".counter");
 
 function startCounter(counter) {
@@ -100,6 +76,14 @@ window.addEventListener("load", () => {
   }
 });
 
+let fArrow = $("footer .down .con .top span");
+let detail = $("footer .down .con .detail");
+
+fArrow.click(function () {
+  fArrow.toggleClass("on");
+  detail.toggleClass("on");
+});
+
 // -----------------------------------
 
 AOS.init({
@@ -111,37 +95,35 @@ AOS.init({
 
 // 반응형에서 다르게 주기
 
-  function updateAOS() {
-    const textboxes = document.querySelectorAll(".section3 li .textbox");
-    const pTag = document.querySelectorAll(".section3 li>p");
+function updateAOS() {
+  const textboxes = document.querySelectorAll(".section3 li .textbox");
+  const pTag = document.querySelectorAll(".section3 li>p");
 
-
-    textboxes.forEach((textbox, k) => {
-      if (window.innerWidth < 768) {
-        textbox.setAttribute("data-aos-duration", "500");
-        textbox.setAttribute("data-aos-delay", "200");
-        textbox.setAttribute("data-aos-offset", "0");
-        pTag[k].setAttribute("data-aos-duration", "500");
-        pTag[k].setAttribute("data-aos-delay", "200");
-        pTag[k].setAttribute("data-aos-offset", "0");
-        // console.log(window.innerWidth);
-      } else {
-        textbox.setAttribute("data-aos-duration", "800");
-        textbox.setAttribute("data-aos-delay", "500");
-        textbox.setAttribute("data-aos-offset", "300");
-        pTag[k].setAttribute("data-aos-duration", "800");
-        pTag[k].setAttribute("data-aos-delay", "500");
-        pTag[k].setAttribute("data-aos-offset", "300");
-      }
-    });
-
-    AOS.refresh(); // 꼭 필요!
-  }
-
-  window.addEventListener("DOMContentLoaded", updateAOS);
-  window.addEventListener("resize", () => {
-    // resize 성능 최적화를 위해 debounce 사용 (선택 사항)
-    clearTimeout(window._aosResizeTimer);
-    window._aosResizeTimer = setTimeout(updateAOS, 150);
+  textboxes.forEach((textbox, k) => {
+    if (window.innerWidth < 768) {
+      textbox.setAttribute("data-aos-duration", "500");
+      textbox.setAttribute("data-aos-delay", "0");
+      textbox.setAttribute("data-aos-offset", "0");
+      pTag[k].setAttribute("data-aos-duration", "500");
+      pTag[k].setAttribute("data-aos-delay", "0");
+      pTag[k].setAttribute("data-aos-offset", "0");
+      // console.log(window.innerWidth);
+    } else {
+      textbox.setAttribute("data-aos-duration", "800");
+      textbox.setAttribute("data-aos-delay", "500");
+      textbox.setAttribute("data-aos-offset", "300");
+      pTag[k].setAttribute("data-aos-duration", "800");
+      pTag[k].setAttribute("data-aos-delay", "500");
+      pTag[k].setAttribute("data-aos-offset", "300");
+    }
   });
 
+  AOS.refresh(); // 꼭 필요!
+}
+
+window.addEventListener("DOMContentLoaded", updateAOS);
+window.addEventListener("resize", () => {
+  // resize 성능 최적화를 위해 debounce 사용 (선택 사항)
+  clearTimeout(window._aosResizeTimer);
+  window._aosResizeTimer = setTimeout(updateAOS, 150);
+});

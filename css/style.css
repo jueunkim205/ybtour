@@ -356,20 +356,22 @@ a {
 }
 
 .section5 .wrap .left .title {
+  width: 100%;
   text-align: left;
   margin-bottom: 1.5rem;
 }
 
 .section5 .wrap .left a {
-  display: flex;
-  gap: 1.5rem;
-  letter-spacing: -1px;
-  font-weight: 500;
+  display: inline-flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .section5 .wrap .left a span {
-  font-size: 1.5rem;
+  display: block;
+  letter-spacing: -1px;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .section5 .wrap .right {
@@ -518,11 +520,22 @@ a {
   }
 
   .section5 .wrap .left {
-    width: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .section5 .wrap .left a {
+  .section5 .wrap .left a{
+    padding-left: 3rem;
+  }
+
+  .section5 .wrap .left a span:first-child {
     display: none;
+  }
+
+  .section5 .wrap .left a span:last-child {
+    font-size: 2rem;
+    font-weight: 400;
   }
 }
 
@@ -569,5 +582,6 @@ a {
   .section3 li .textbox {
     width: 100%;
   }
+
 
 }
