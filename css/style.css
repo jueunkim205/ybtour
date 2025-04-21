@@ -213,10 +213,11 @@ a {
 }
 
 .section3 li .textbox h1:first-of-type {
-  font-size: 4.8rem;
+  font-size: 4.5rem;
   color: #222;
   font-weight: 400;
   letter-spacing: -1px;
+  word-break: keep-all;
 }
 
 .section3 li .textbox h1:last-of-type {
@@ -475,7 +476,7 @@ a {
   }
 
   .section3 li:nth-child(odd) .textbox {
-    padding-left: 10%;
+    padding-left: 7%;
   }
 
   .section3 li:nth-child(even) .textbox {
@@ -484,7 +485,8 @@ a {
 
   .section3 li .textbox h1:first-of-type,
   .section3 li .textbox h1:last-of-type {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
   }
 
   .section4 ul {

@@ -382,6 +382,10 @@ footer .copy {
     flex-direction: column;
   }
 
+  footer .up .banner ul:first-child{
+    gap: 10px 30px;
+  }
+
   footer .up .banner ul:last-child {
     margin-top: 2rem;
   }
