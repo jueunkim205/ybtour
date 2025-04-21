@@ -117,6 +117,11 @@ header nav .mainMenu li:first-child .subMenu li:last-child a {
   padding-bottom: 30px;
 }
 
+/* header 사이드바메뉴, footer arrow */
+.mOnly {
+  display: none;
+}
+
 header nav .bg {
   position: absolute;
   width: 100vw;
@@ -134,39 +139,6 @@ header nav .bg {
 header nav .mainMenu:hover~.bg {
   height: 300px;
   border-width: 1px;
-}
-
-#sideMenu {
-  display: none;
-  position: fixed;
-  top: 70px;
-  background: #fff;
-  width: 100vw;
-  height: 100vh;
-}
-
-#sideMenu ul {
-  width: 100%;
-  padding: 30px;
-  box-sizing: border-box;
-}
-
-#sideMenu ul li {
-  margin-bottom: 20px;
-}
-
-#sideMenu ul li a {
-  font-size: 2.2rem;
-  font-weight: 800;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Noto Sans KR", serif;
-  color: #000;
-}
-
-#sideMenu ul li a span {
-  font-weight: 400;
 }
 
 
@@ -315,10 +287,6 @@ footer .down .con .top img {
   margin-left: 15px;
 }
 
-.mOnly {
-  display: none;
-}
-
 footer .down .con .detail {
   display: flex;
   justify-content: space-between;
@@ -393,7 +361,7 @@ footer .copy {
 
 
 
-
+/* 
 @media (hover: none) and (pointer: coarse){
   header:hover {
     background: transparent;
@@ -402,15 +370,13 @@ footer .copy {
   header nav:hover .logo img {
     transform: none;
   }
-}
+} */
 
 @media screen and (max-width:1200px) {
 
   footer .down .con .detail .left::after {
     width: 0;
   }
-  
-
 
 }
 
@@ -454,6 +420,44 @@ footer .copy {
     transition: 0.3s;
   }
 
+  #sideMenu {
+    right : -999px;
+    position: fixed;
+    top: 70px;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    transition: right .5s;
+  }
+  
+  #sideMenu.on {
+    right: 0;
+  }
+  
+  #sideMenu ul {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  #sideMenu ul li {
+    margin-bottom: 20px;
+  }
+  
+  #sideMenu ul li a {
+    font-size: 2.2rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Noto Sans KR", serif;
+    color: #000;
+  }
+  
+  #sideMenu ul li a span {
+    font-weight: 400;
+  }
+
   header:hover .mOnly div,
   header.on .mOnly div {
     background-color: #000;
@@ -469,7 +473,7 @@ footer .copy {
     top: 5px;
     left: 20px;
   }
-  
+
   header.on .mOnly.on div:nth-child(2) {
     opacity: 0;
   }
@@ -479,13 +483,6 @@ footer .copy {
     width: 18px;
     top: -5.5px;
     left: 20px;
-  }
-
-
-
-
-  #sideMenu.on {
-    display: block;
   }
 
   footer .up {
