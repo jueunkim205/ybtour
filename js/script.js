@@ -3,44 +3,61 @@
 
 // ************** header 메인메뉴 **************
 
-let header = document.querySelector("header");
+/**
+ * 인자로 전달된 문자열이 존재한다면 그 문자열이 위치한 index를 리턴합니다. 존재하지 않는다면 -1를 리턴합니다. -1을 통해서 해당 문자열이 존재하는 지 않하는지 판단할 수 있습니다.
+ */
 
-function onWheelScroll(e) {
-  let ht = document.documentElement.scrollTop;
-  let delta = e.deltaY;
+document.addEventListener("DOMContentLoaded", function () {
+  const addr = window.location.pathname;
+  const header = document.querySelector("header");
 
-  if (delta > 0 && ht != 0) {
-    header.style.transform = "translateY(-200px)";
-    header.classList.remove("on");
-  } else if (delta < 0 && ht > 500) {
-    header.style.transform = "translateY(0)";
-    header.classList.add("on");
-  } else if (delta < 0 && ht <= 500) {
-    header.style.transform = "translateY(0)";
-    header.classList.remove("on");
-  } else {
-    header.classList.remove("on");
+  function onWheelScroll(e) {
+    const ht = document.documentElement.scrollTop;
+    const delta = e.deltaY;
+
+    if (addr.indexOf("sub") > 0) {
+      header.classList.add("on");
+      if (delta > 0 && ht > 0) {
+        header.style.transform = "translateY(-200px)";
+      } else {
+        header.style.transform = "translateY(0)";
+      }
+    } else {
+      if (delta > 0 && ht > 0) {
+        header.style.transform = "translateY(-200px)";
+        header.classList.remove("on");
+      } else if (delta < 0) {
+        header.style.transform = "translateY(0)";
+        if (ht > 500) {
+          header.classList.add("on");
+        } else {
+          header.classList.remove("on");
+        }
+      }
+    }
   }
-}
 
-// 현재 이벤트 등록 여부 체크용
-let wheelAttached = false;
+  window.addEventListener("wheel", onWheelScroll);
 
-function updateWheelEvent() {
-  if (window.innerWidth >= 1200 && !wheelAttached) {
-    window.addEventListener("wheel", onWheelScroll);
-    wheelAttached = true;
-  } else if (window.innerWidth < 1200 && wheelAttached) {
-    window.removeEventListener("wheel", onWheelScroll);
-    wheelAttached = false;
+  // 현재 이벤트 등록 여부 체크용
+  let wheelAttached = false;
+
+  function updateWheelEvent() {
+    if (window.innerWidth >= 1200 && !wheelAttached) {
+      window.addEventListener("wheel", onWheelScroll);
+      wheelAttached = true;
+    } else if (window.innerWidth < 1200 && wheelAttached) {
+      window.removeEventListener("wheel", onWheelScroll);
+      wheelAttached = false;
+    }
   }
-}
 
-// 페이지 로드시 한 번 실행
-updateWheelEvent();
+  // 페이지 로드시 한 번 실행
+  updateWheelEvent();
 
-// 창 크기 바뀔 때마다 체크
-window.addEventListener("resize", updateWheelEvent);
+  // 창 크기 바뀔 때마다 체크
+  window.addEventListener("resize", updateWheelEvent);
+});
 
 // ************** Side메뉴 **************
 
@@ -63,7 +80,6 @@ sideBtn.on("click", function () {
 
 let sideMainMenu = $("#sideMenu .mainMenu");
 let sideSubMenu = $("#sideMenu .subMenu");
-let ht = 0;
 
 sideSubMenu.each(function () {
   $(this).removeClass("on");
@@ -71,6 +87,7 @@ sideSubMenu.each(function () {
 });
 
 sideMainMenu.on("click", function () {
+  let ht = 0;
   let sub = $(this).find(".subMenu");
 
   if (sub.hasClass("on")) {

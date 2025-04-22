@@ -1,4 +1,5 @@
 // jQuery
+document.querySelector('header').classList.add('on')
 
 $(".section4 ul li")
   .on("mouseover", function () {
@@ -7,8 +8,6 @@ $(".section4 ul li")
   .on("mouseleave", function () {
     $(this).removeClass("on");
   });
-
-
 
 
 let btns = $("#sub2Btns a");
@@ -28,31 +27,6 @@ btns.each(function (index) {
 });
 
 
-
-/* javascript
-let btns = document.querySelectorAll("#sub2Btns a");
-let sections = document.querySelectorAll("section");
-
-btns[0].classList.add("on");
-sections[0].classList.add("on");
-
-btns.forEach((v, k) => {
-  v.onclick = function () {
-    console.log(k);
-
-    btns.forEach((v) => {
-      v.classList.remove("on");
-    });
-
-    sections.forEach((v) => {
-      v.classList.remove("on");
-    });
-
-    v.classList.add("on");
-    sections[k].classList.add("on");
-  };
-});
-*/
 
 AOS.init({
   duration: 1000,

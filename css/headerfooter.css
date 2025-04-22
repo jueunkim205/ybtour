@@ -1,3 +1,8 @@
+:root {
+  /* rem의 기준 */
+  font-size: 10px;
+}
+
 /******** header ********/
 header {
   position: fixed;
