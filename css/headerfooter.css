@@ -141,6 +141,57 @@ header nav .mainMenu:hover~.bg {
   border-width: 1px;
 }
 
+#sideMenu {
+  position: fixed;
+  right: -200%;
+  top: 70px;
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  transition: right 1s ease;
+  overflow: hidden;
+  border-top: 1px solid #000;
+}
+
+#sideMenu.on {
+  right: 0;
+}
+
+#sideMenu .mainMenu {
+  width: 100%;
+  padding: 30px 30px 0 30px;
+  box-sizing: border-box;
+}
+
+#sideMenu>ul li a {
+  font-size: 2.2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Noto Sans KR", serif;
+  color: #000;
+}
+
+#sideMenu ul li a span {
+  font-weight: 400;
+}
+
+#sideMenu .subMenu {
+  height: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: .5s;
+}
+
+#sideMenu .subMenu a {
+  font-weight: normal;
+}
+
+#sideMenu .subMenu li:first-child a {
+  margin-top: 10px;
+}
+
 
 /******** footer ********/
 
@@ -418,44 +469,6 @@ footer .copy {
     background-color: #fff;
     transform: translateX(-50%);
     transition: 0.3s;
-  }
-
-  #sideMenu {
-    right : -999px;
-    position: fixed;
-    top: 70px;
-    background: #fff;
-    width: 100vw;
-    height: 100vh;
-    transition: right .5s;
-  }
-  
-  #sideMenu.on {
-    right: 0;
-  }
-  
-  #sideMenu ul {
-    width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
-  }
-  
-  #sideMenu ul li {
-    margin-bottom: 20px;
-  }
-  
-  #sideMenu ul li a {
-    font-size: 2.2rem;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Noto Sans KR", serif;
-    color: #000;
-  }
-  
-  #sideMenu ul li a span {
-    font-weight: 400;
   }
 
   header:hover .mOnly div,

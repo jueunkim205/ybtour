@@ -42,22 +42,51 @@ updateWheelEvent();
 // 창 크기 바뀔 때마다 체크
 window.addEventListener("resize", updateWheelEvent);
 
-
-
-
 // ************** Side메뉴 **************
+
 let sideBtn = $("header button");
 sideBtn.on("click", function () {
   $("#sideMenu").toggleClass("on");
 
   if ($("#sideMenu").hasClass("on")) {
     $("header").addClass("on");
-    $(this).addClass('on')
-    $("html").css({ overflow: "hidden", height:'100%' });
+    $(this).addClass("on");
+    $("html").css({ overflow: "hidden", height: "100%" });
   } else {
-    $(this).removeClass('on')
+    $(this).removeClass("on");
     $("header").removeClass("on");
-    $("html").css({ overflow: "auto", height:'auto' });
+    $("html").css({ overflow: "auto", height: "auto" });
+  }
+});
+
+//-----------------------------------------------
+
+let sideMainMenu = $("#sideMenu .mainMenu");
+let sideSubMenu = $("#sideMenu .subMenu");
+let ht = 0;
+
+sideSubMenu.each(function () {
+  $(this).removeClass("on");
+  $(this).css({ height: "0" });
+});
+
+sideMainMenu.on("click", function () {
+  let sub = $(this).find(".subMenu");
+
+  if (sub.hasClass("on")) {
+    sub.removeClass("on").css({ height: "0" });
+  } else {
+    sideSubMenu.each(function () {
+      $(this).removeClass("on").css({ height: "0" });
+    });
+
+    sub.css({ height: "auto" });
+    ht = sub.outerHeight();
+    sub.css({ height: "0" }); // reset before animation
+    sub.addClass("on");
+    setTimeout(() => {
+      sub.css({ height: ht + "px" });
+    }, 10); // timeout to trigger transition
   }
 });
 
