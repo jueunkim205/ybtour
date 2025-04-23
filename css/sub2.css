@@ -2,18 +2,20 @@
 
 section {
   display: none;
+  padding: 0;
 }
 
-section.on{
+section.on {
   display: block;
 }
 
-section h2{
-  display: flex;justify-content: space-between;
+section h2 {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-section h2 span{
+section h2 span {
   font-family: Pretendard, sans-serif;
   font-size: 16px;
   color: #555;
@@ -43,11 +45,10 @@ section h2 span{
   color: #fff;
 }
 
-
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   border-top: 2px solid #000;
 }
 
@@ -59,24 +60,24 @@ table td {
   font-weight: normal;
 }
 
-table th{
+table th {
   border-left: none;
   word-break: keep-all;
 }
 
-table td{
+table td {
   text-align: right;
   color: #555;
-  width:24%;
+  width: 24%;
 }
 
-table thead th{
+table thead th {
   font-weight: bold;
   background: #eee;
 }
 
 
 table th:last-of-type,
-table td:last-of-type{
+table td:last-of-type {
   border-right: none;
 }

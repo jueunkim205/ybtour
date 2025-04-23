@@ -52,6 +52,9 @@ h4 {
   font-size: 48px;
   text-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
 }
+.subTitle .txt p {
+ font-size: 1.6rem;
+}
 
 section {
   padding: 100px 0;
