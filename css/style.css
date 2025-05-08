@@ -397,11 +397,13 @@ a {
   font-size: 1.8rem;
   font-weight: 500;
   font-family: "Noto Sans KR", serif;
+  word-break: keep-all;
 }
 
 .section5 .wrap .right ul li span {
   font-size: 1.6rem;
   font-weight: 400;
+  margin-left: 1rem;
 }
 
 /******** section5 끝 ********/
