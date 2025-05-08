@@ -188,12 +188,12 @@ function updateAOS() {
       pTag[k].setAttribute("data-aos-offset", "0");
       // console.log(window.innerWidth);
     } else {
-      textbox.setAttribute("data-aos-duration", "800");
-      textbox.setAttribute("data-aos-delay", "500");
-      textbox.setAttribute("data-aos-offset", "300");
-      pTag[k].setAttribute("data-aos-duration", "800");
-      pTag[k].setAttribute("data-aos-delay", "500");
-      pTag[k].setAttribute("data-aos-offset", "300");
+      textbox.setAttribute("data-aos-duration", "700");
+      textbox.setAttribute("data-aos-delay", "400");
+      textbox.setAttribute("data-aos-offset", "100");
+      pTag[k].setAttribute("data-aos-duration", "700");
+      pTag[k].setAttribute("data-aos-delay", "400");
+      pTag[k].setAttribute("data-aos-offset", "100");
     }
   });
 
