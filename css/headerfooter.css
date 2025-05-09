@@ -154,7 +154,6 @@ header nav .mainMenu:hover~.bg {
   height: 100vh;
   transition: right 1s ease;
   overflow: hidden;
-  border-top: 1px solid #000;
 }
 
 #sideMenu.on {
@@ -190,6 +189,8 @@ header nav .mainMenu:hover~.bg {
 
 #sideMenu .subMenu a {
   font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.5;
 }
 
 #sideMenu .subMenu li:first-child a {
