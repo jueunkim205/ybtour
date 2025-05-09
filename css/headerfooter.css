@@ -458,9 +458,10 @@ footer .copy {
   header .mOnly {
     position: relative;
     display: block;
+    justify-content: center;
     right: 0px;
     z-index: 3;
-    width: 60px;
+    width: 40px;
     height: 60px;
     transition: 0.8s;
     background-color: transparent;
@@ -489,7 +490,7 @@ footer .copy {
     transform: rotate(45deg);
     width: 18px;
     top: 5px;
-    left: 20px;
+    left: 12px;
   }
 
   header.on .mOnly.on div:nth-child(2) {
@@ -500,7 +501,7 @@ footer .copy {
     transform: rotate(-45deg);
     width: 18px;
     top: -5.5px;
-    left: 20px;
+    left: 12px;
   }
 
   footer .up {
