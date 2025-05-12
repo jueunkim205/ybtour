@@ -117,7 +117,8 @@ function startCounter(counter) {
 
   const updateCounter = () => {
     const count = +counter.textContent.replace(/,/g, "");
-    const increment = targetNum / 100;
+    // 속도조절
+    const increment = targetNum / 150;
     const nextCount = Math.ceil(count + increment);
     const finalCount = nextCount > targetNum ? targetNum : nextCount;
 
@@ -189,10 +190,10 @@ function updateAOS() {
       // console.log(window.innerWidth);
     } else {
       textbox.setAttribute("data-aos-duration", "700");
-      textbox.setAttribute("data-aos-delay", "400");
+      textbox.setAttribute("data-aos-delay", "300");
       textbox.setAttribute("data-aos-offset", "100");
       pTag[k].setAttribute("data-aos-duration", "700");
-      pTag[k].setAttribute("data-aos-delay", "400");
+      pTag[k].setAttribute("data-aos-delay", "300");
       pTag[k].setAttribute("data-aos-offset", "100");
     }
   });
