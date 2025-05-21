@@ -1,33 +1,104 @@
 @charset "utf-8";
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: YbFontMedium;
+  src: url(../images/YbFontMedium.woff) format("woff");
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: YbFontMedium;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+.subTitle {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  margin-top: 100px;
+  text-align: center;
+  background: url(../images/sub_title_info.jpg) center/cover no-repeat;
+}
+
+.subTitle .txt {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.subTitle .txt h1 {
+  font-family: YbFontMedium;
+  margin-top: 25px;
+  font-size: 48px;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+}
+.subTitle .txt p {
+ font-size: 1.6rem;
+}
+
+section {
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+
+section .wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Pretendard, sans-serif;
+}
+
+
+
+
 /************* section1  *************/
 
-.section1 .wrap h1 {
+.sub1 .section1 .wrap h1 {
   font-family: YbFontMedium;
   font-size: 64px;
   margin: 40px 0 100px;
   display: block;
 }
 
-.section1 .wrap ul {
+.sub1 .section1 .wrap ul {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-.section1 .wrap ul li {
+.sub1 .section1 .wrap ul li {
   flex: 1;
 }
 
-.section1 .wrap .textbox {
+.sub1 .section1 .wrap .textbox {
   word-break: keep-all;
 }
 
-.section1 .wrap ul li img {
+.sub1 .section1 .wrap ul li img {
   border-radius: 7px;
 }
 
-.section1 .wrap ul li span {
+.sub1 .section1 .wrap ul li span {
   display: block;
   font-size: 20px;
   color: #4567ad;
@@ -35,7 +106,7 @@
   margin: 25px 0 5px;
 }
 
-.section1 .wrap ul li p {
+.sub1 .section1 .wrap ul li p {
   font-size: 16px;
   color: #555;
   margin-top: 20px;
@@ -44,29 +115,29 @@
 }
 
 /************* section2  *************/
-.section2 {
+.sub1 .section2 {
   background: url(../images/bg_brand.jpg) center/cover no-repeat;
   box-sizing: border-box;
 }
 
-.section2 .wrap {
+.sub1 .section2 .wrap {
   word-break: keep-all;
   color: #fff;
   font-family: Pretendard, sans-serif;
 }
 
-.section2 .wrap .up p {
+.sub1 .section2 .wrap .up p {
   font-size: 64px;
   font-weight: bold;
   line-height: 1.3;
 }
 
-.section2 .wrap .down {
+.sub1 .section2 .wrap .down {
   text-align: right;
   margin-top: 150px;
 }
 
-.section2 .wrap .down p {
+.sub1 .section2 .wrap .down p {
   margin-top: 15px;
   line-height: 1.5;
   font-weight: 600;
@@ -74,19 +145,19 @@
 
 /************* section3  *************/
 
-.section3,
-.section5 {
+.sub1 .section3,
+.sub1 .section5 {
   background: #f3fcfc;
 }
 
-.section3 ul {
+.sub1 .section3 ul {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   background: #fff;
 }
 
-.section3 ul li {
+.sub1 .section3 ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,99 +170,99 @@
   box-sizing: border-box;
 }
 
-.section3 ul li:nth-child(n+8):nth-child(-n+10) {
+.sub1 .section3 ul li:nth-child(n+8):nth-child(-n+10) {
   border-bottom: none;
 }
 
-.section3 ul li:nth-child(4),
-.section3 ul li:nth-child(7),
-.section3 ul li:last-child {
+.sub1 .section3 ul li:nth-child(4),
+.sub1 .section3 ul li:nth-child(7),
+.sub1 .section3 ul li:last-child {
   border-right: none;
 }
 
-.section3 ul li p {
+.sub1 .section3 ul li p {
   width: 3rem;
   height: 4rem;
   scale: 1.2;
 }
 
-.section3 ul li h5 {
+.sub1 .section3 ul li h5 {
   margin: 1.5rem 0 2rem;
   font-size: 2rem;
 }
 
-.section3 ul li span {
+.sub1 .section3 ul li span {
   color: #555;
   font-weight: 500;
   text-align: center;
   font-size: 1.6rem;
 }
 
-.section3 ul li:first-child p {
+.sub1 .section3 ul li:first-child p {
   background: url(../images/ico_symbol.png) 1px -380px / 450px no-repeat;
 }
 
-.section3 ul li:nth-child(2) p {
+.sub1 .section3 ul li:nth-child(2) p {
   background: url(../images/ico_symbol.png) -37px -380px / 450px no-repeat;
 }
 
-.section3 ul li:nth-child(3) p {
+.sub1 .section3 ul li:nth-child(3) p {
   background: url(../images/ico_symbol.png) -74px -380px / 450px no-repeat;
 }
 
-.section3 ul li:nth-child(4) p {
+.sub1 .section3 ul li:nth-child(4) p {
   background: url(../images/ico_symbol.png) -111px -380px / 450px no-repeat;
 }
 
-.section3 ul li:nth-child(5) {
+.sub1 .section3 ul li:nth-child(5) {
   flex: 1 1 50%;
 }
 
-.section3 ul li:nth-child(5) p {
+.sub1 .section3 ul li:nth-child(5) p {
   background: url(../images/ico_symbol.png) -150px -380px / 450px no-repeat;
 }
 
-.section3 ul li:nth-child(6) p {
+.sub1 .section3 ul li:nth-child(6) p {
   background: url(../images/ico_symbol.png) -111px -380px / 450px no-repeat;
 }
 
-.section3 ul li:nth-child(7) p {
+.sub1 .section3 ul li:nth-child(7) p {
   background: url(../images/ico_symbol.png) -226px -380px / 450px no-repeat;
 }
 
-.section3 ul li:nth-child(8) p {
+.sub1 .section3 ul li:nth-child(8) p {
   background: url(../images/ico_symbol.png) -262px -380px / 450px no-repeat;
 }
 
-.section3 ul li:nth-child(9) p {
+.sub1 .section3 ul li:nth-child(9) p {
   background: url(../images/ico_symbol.png) -300px -380px / 450px no-repeat;
 }
 
-.section3 ul li:last-child {
+.sub1 .section3 ul li:last-child {
   flex: 1 1 50%;
 }
 
-.section3 ul li:last-child>div {
+.sub1 .section3 ul li:last-child>div {
   display: flex;
   gap: 20px;
   color: #555;
   text-align: center;
 }
 
-.section3 ul li:last-child p {
+.sub1 .section3 ul li:last-child p {
   background: url(../images/ico_symbol.png) -338px -380px / 450px no-repeat;
 }
 
 /************* section4  *************/
 
-.section4 ul {
+.sub1 .section4 ul {
   display: flex;
   gap: 20px;
   width: 100%;
   height: 500px;
 }
 
-.section4 ul li {
+.sub1 .section4 ul li {
   position: relative;
   flex: 1;
   display: flex;
@@ -209,23 +280,23 @@
 }
 
 
-.section4 ul li:first-child {
+.sub1 .section4 ul li:first-child {
   position: relative;
   background: url(../images/bg_management_1.jpg) center/cover no-repeat;
 }
 
-.section4 ul li:nth-child(2) {
+.sub1 .section4 ul li:nth-child(2) {
   position: relative;
   background: url(../images/bg_management_2.jpg) center/cover no-repeat;
 
 }
 
-.section4 ul li:last-child {
+.sub1 .section4 ul li:last-child {
   position: relative;
   background: url(../images/bg_management_3.jpg) center/cover no-repeat;
 }
 
-.section4 ul li::after {
+.sub1 .section4 ul li::after {
   position: absolute;
   content: '';
   top: 0;
@@ -237,44 +308,44 @@
 }
 
 
-.section4 ul li span {
+.sub1 .section4 ul li span {
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 5px;
 }
 
-.section4 ul li h5 {
+.sub1 .section4 ul li h5 {
   font-size: 24px;
   margin-bottom: -20px;
   transition:  .7s;
 }
 
-.section4 ul li p {
+.sub1 .section4 ul li p {
   transform: scale(0);
   transition: transform .5s;
   font-size: 1.6rem;
 }
 
-.section4 ul li.on {
+.sub1 .section4 ul li.on {
   flex: 2.5;
 }
 
-.section4 ul li.on::after {
+.sub1 .section4 ul li.on::after {
   background: rgba(0, 0, 0, .5);
 }
 
-.section4 ul li.on h5 {
+.sub1 .section4 ul li.on h5 {
   margin-bottom: 10px;
 }
 
-.section4 ul li.on p {
+.sub1 .section4 ul li.on p {
   transform: scale(1);
 }
 
 
 /************* section5  *************/
 
-.section5 ul {
+.sub1 .section5 ul {
   width: 100%;
   height: 850px;
   display: flex;
@@ -283,7 +354,7 @@
   margin-top: 10px;
 }
 
-.section5 ul li {
+.sub1 .section5 ul li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -295,7 +366,7 @@
   border-radius: 10px;
 }
 
-.section5 ul li p {
+.sub1 .section5 ul li p {
   width: 80px;
   height: 80px;
   background-image: url(../images/ico_symbol.png);
@@ -303,17 +374,17 @@
   background-repeat: no-repeat;
 }
 
-.section5 ul li span {
+.sub1 .section5 ul li span {
   color: #555;
   font-size: 14px;
   font-weight: 800;
 }
 
-.section5 ul li h5 {
+.sub1 .section5 ul li h5 {
   font-size: 20px;
 }
 
-.section5 ul li h6 {
+.sub1 .section5 ul li h6 {
   font-size: 16px;
   color: #555;
   margin-top: 5px;
@@ -321,108 +392,193 @@
   line-height: 1.5;
 }
 
-.section5 ul li:first-child p {
+.sub1 .section5 ul li:first-child p {
   background-position: 0px -412px;
 }
 
-.section5 ul li:nth-child(2) p {
+.sub1 .section5 ul li:nth-child(2) p {
   background-position: -100px -412px;
 }
 
-.section5 ul li:nth-child(3) p {
+.sub1 .section5 ul li:nth-child(3) p {
   background-position: -200px -412px;
 }
 
-.section5 ul li:nth-child(4) p {
+.sub1 .section5 ul li:nth-child(4) p {
   background-position: -300px -412px;
 }
 
-.section5 ul li:nth-child(5) p {
+.sub1 .section5 ul li:nth-child(5) p {
   background-position: -400px -412px;
 }
 
-.section5 ul li:nth-child(6) p {
+.sub1 .section5 ul li:nth-child(6) p {
   background-position: -500px -412px;
 }
 
-.section5 ul li:nth-child(7) p {
+.sub1 .section5 ul li:nth-child(7) p {
   background-position: -327px -250px;
 }
 
-.section5 ul li:last-child p {
+.sub1 .section5 ul li:last-child p {
   background-position: -427px -250px;
 }
 
 
 
 /************* section6  *************/
-.section6 .con {
+.sub1 .section6 .con {
   margin-bottom: 50px;
 }
 
-.section6 .con h3 {
+.sub1 .section6 .con h3 {
   font-size: 28px;
   margin-bottom: 32px;
 }
 
-.section6 .con ul {
+.sub1 .section6 .con ul {
   width: 100%;
   display: flex;
   gap: 16px;
 }
 
-.section6 .con ul li {
+.sub1 .section6 .con ul li {
   width: calc((100% - 64px) / 5);
   overflow: hidden;
 }
 
-.section6 .con ul li p {
+.sub1 .section6 .con ul li p {
   width: 100%;
   height: 90px;
   background-image: url(../images/ico_coorp_spr.png);
   background-repeat: no-repeat;
 }
 
-.section6 .con:first-of-type ul li:nth-child(2) p {
+.sub1 .section6 .con:first-of-type ul li:nth-child(2) p {
   background-position: -243px 0px;
 }
 
-.section6 .con:first-of-type ul li:nth-child(3) p {
+.sub1 .section6 .con:first-of-type ul li:nth-child(3) p {
   background-position: -486px 0px;
 }
 
-.section6 .con:first-of-type ul li:nth-child(4) p {
+.sub1 .section6 .con:first-of-type ul li:nth-child(4) p {
   background-position: -729px 0px;
 }
 
-.section6 .con:first-of-type ul li:last-child p {
+.sub1 .section6 .con:first-of-type ul li:last-child p {
   background-position: -972px 0px;
 }
 
-.section6 .con:nth-of-type(2) ul li:first-child p {
+.sub1 .section6 .con:nth-of-type(2) ul li:first-child p {
   background-position: 0px -318px;
 }
 
-.section6 .con:nth-of-type(2) ul li:nth-child(2) p {
+.sub1 .section6 .con:nth-of-type(2) ul li:nth-child(2) p {
   background-position: -243px -318px
 }
 
-.section6 .con:nth-of-type(2) ul li:nth-child(3) p {
+.sub1 .section6 .con:nth-of-type(2) ul li:nth-child(3) p {
   background-position: -486px -318px
 }
 
-.section6 .con:nth-of-type(2) ul li:last-child p {
+.sub1 .section6 .con:nth-of-type(2) ul li:last-child p {
   background-position: -729px -318px
 }
 
-.section6 .con:last-of-type ul li:first-child p {
+.sub1 .section6 .con:last-of-type ul li:first-child p {
   background-position: 0px -424px
 }
 
-.section6 .con:last-of-type ul li:nth-child(2) p {
+.sub1 .section6 .con:last-of-type ul li:nth-child(2) p {
   background-position: -243px -424px
 }
 
-.section6 .con:last-of-type ul li:last-child p {
+.sub1 .section6 .con:last-of-type ul li:last-child p {
   background-position: -486px -424px
+}
+
+
+/************* sub2  *************/
+
+.sub2 section {
+  display: none;
+  padding: 0;
+}
+
+.sub2 section.on {
+  display: block;
+}
+
+.sub2 section h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub2 section h2 span {
+  font-family: Pretendard, sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+
+#sub2Btns {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#sub2Btns a {
+  padding: 12px 24px;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #777;
+  background: #f7f7f7;
+  font-family: Pretendard, sans-serif;
+}
+
+#sub2Btns a.on {
+  background: #131d73;
+  color: #fff;
+}
+
+.sub2 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 120px;
+  border-top: 2px solid #000;
+}
+
+.sub2 table th,
+.sub2 table td {
+  border: 1px solid #ddd;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.sub2 table th {
+  border-left: none;
+  word-break: keep-all;
+}
+
+.sub2 table td {
+  text-align: right;
+  color: #555;
+  width: 24%;
+}
+
+.sub2 table thead th {
+  font-weight: bold;
+  background: #eee;
+}
+
+
+.sub2 table th:last-of-type,
+.sub2 table td:last-of-type {
+  border-right: none;
 }

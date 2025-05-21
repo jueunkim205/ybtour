@@ -365,7 +365,7 @@ footer .down .con .detail .left::after {
   position: absolute;
   content: '';
   width: 1px;
-  height: 100px;
+  height: 120px;
   right: -9vw;
   top: 10px;
   background: #ddd;
